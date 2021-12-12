@@ -328,6 +328,8 @@ nav .search input{
 }
 .image_scroll-text-window p {
     width:80%;
+    font-size:20px;
+    margin:0 auto;
 }
 .video_img{
     width:50px;
@@ -446,6 +448,7 @@ input::placeholder{
     text-align:center;
     padding:20px;
     background: linear-gradient(to bottom, rgb(36, 37, 42) , rgb(0,136,169));
+    padding-bottom:40px;
 }
 
 form{
@@ -454,7 +457,7 @@ form{
     gap:6px;
     background-color:rgb(36, 37, 42);
     flex-direction: column;
-    width:30%;
+    width:40%;
     margin-left:20px;
     margin-top:20px;
     padding:20px;
@@ -479,7 +482,7 @@ form input{
     color:rgb(255, 255, 255);
     text-transform:uppercase;
     font-weight: bold;
-    width:50%;
+    width:90%;
     align-self:center;
 }
 form input::placeholder{
@@ -495,6 +498,7 @@ form input::placeholder{
     background-color:rgb(0,136,169);
     cursor:pointer;
     transition:0.2s;
+    width:50%;
 }
 .but:hover{
     background-color:darkorange;
@@ -511,7 +515,7 @@ form textarea{
     
 }
 .lessons_wrap{
-    
+
     width:100%;
     padding:40px;
     background: linear-gradient(to top, rgb(36, 37, 42) , rgb(0,136,169));
@@ -617,8 +621,25 @@ form textarea{
 }
 .lessons_four p:nth-child(4){
     font-size:1.4em;
+}
+.footer_text p:nth-child(1){
+    font-size:2em;
+}
+.footer_text p:nth-child(2){
+    font-size:0.8em;
+    align-self:center;
+    text-align: center;
+    margin-top:10px;
+}
+footer{
     
-    
+    width:100%;
+    height:100px;
+    margin-top:auto;
+    background-color:rgb(36, 37, 42);
+    color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
 }
 @media (max-width:1200px){
     form{
@@ -775,7 +796,9 @@ form input{
 .but{
     align-self:flex-start;
 }
-    
+#first_text{
+    font-size:14px;
+ }
 }
 @media(max-width:792px){
     .nav_logo {
@@ -797,6 +820,7 @@ form input{
     }
     #first_text{
         font-size:12px;
+        
     }
     .school_images-item-first{
 
@@ -829,13 +853,21 @@ form input{
     form{
         width:50%;
     }
+    #first_text{
+        font-size:13px;
+     }
+     .image_scroll-text-window{
+        padding-left:18px;
+        padding-right:5px;
+        width:50%;
+     }
 }
 @media (max-width:520px){
     .lessons{
         flex-direction: column;
     }
     #first_text{
-        font-size:10px;
+       font-size:13px;
     }
     .image_scroll{
         flex-direction: column;
@@ -845,7 +877,6 @@ form input{
         width:100%;
         position:relative;
         top:200px;
-        font-size:40px;
         padding:20px;
         justify-self: center;
         
@@ -895,6 +926,10 @@ form input{
     height:30px;}
     .showcase_social{
         bottom:10px;
+    }
+    .school_courses{
+        left:0;
+        font-size:15px;
     }
 
 }
